@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './css/index.css';
 import App from './js/App';
 import * as serviceWorkerRegistration from './js/utils/serviceWorkerRegistration';
 import reportWebVitals from './js/utils/reportWebVitals';
+
+import './css/variables.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 // If you want your app to work offline and load faster, you can change

@@ -1,0 +1,9 @@
+:root {
+  --blur-amount: 4px;
+  --colour-accent-1: #198fde; /* Accent */
+  --colour-accent-2: #333;
+  --colour-accent-3: #111;
+  --colour-accent-4: #fff;
+  --colour-accent-5: #48b6ff; /* Highlight */
+  --colour-accent-6: #0067ab; /* Pressed */
+}
