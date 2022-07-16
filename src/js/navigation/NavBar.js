@@ -1,24 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../assets/logo.svg';
 import '../../css/navbar.css';
 
-const NavBar = () => (
-  <nav className="navbar px-4 navbar-expand-lg fixed-top navbar-dark bg-dark">
-    <span className="navbar-brand mb-0 h1">
-      <img src={logo} width="30" height="30" alt="Logo" />
-    </span>
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon" />
-    </button>
-    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div className="navbar-nav">
-        <Link to="/" className="nav-item nav-link">Home</Link>
-        <Link to="/cardmaker" className="nav-item nav-link">Card Maker</Link>
-        <Link to="/about" className="nav-item nav-link">About</Link>
-      </div>
-    </div>
-  </nav>
-);
+const NavBar = () => {
+  const [navColour, setNavState] = useState('light');
+  window.addEventListener('scroll', () => setNavState(window.scrollY > 56 ? 'dark' : 'light'));
+  return (
+    <Navbar collapseOnSelect expand="lg" bg={navColour} variant={navColour} fixed="top">
+      <Container>
+        <Link to="/">
+          <img className="navbar-logo" src={logo} alt="Logo" />
+        </Link>
+        <Navbar.Toggle aria-controls="navbar-toggler" id="hamburger" />
+        <Navbar.Collapse id="navbar-toggler">
+          <Nav className="mx-auto">
+            <Nav.Link eventKey="1" as={Link} to="/" className="nav-item nav-link">Home</Nav.Link>
+            <Nav.Link eventKey="2" as={Link} to="/cardmaker" className="nav-item nav-link">Card Maker</Nav.Link>
+            <Nav.Link eventKey="3" as={Link} to="/about" className="nav-item nav-link">About</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};
 
 export default NavBar;
