@@ -1,0 +1,22 @@
+{
+    "env": { "browser": true, "node": true },
+    "extends": [ "plugin:react/recommended", "airbnb" ],
+    "rules": {
+      "no-plusplus": 0,
+      "import/prefer-default-export": 0,
+      "linebreak-style": 0,
+      "no-param-reassign": 0,
+      "no-console": "off",
+      "no-shadow": "off",
+      "react/function-component-definition": [
+        2,
+        {
+            "namedComponents": "arrow-function",
+            "unnamedComponents": "arrow-function"
+        }
+      ],
+      "react/jsx-filename-extension": [1, { "extensions": [ ".js", ".jsx" ] }],
+      "react/jsx-props-no-spreading": "off",
+      "react/no-danger": 0
+    }
+  }
