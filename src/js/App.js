@@ -5,15 +5,13 @@ import * as Pages from './pages/index';
 
 const App = () => (
   <Router>
-    <div>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Pages.Home />} />
-        <Route path="/cardmaker" element={<Pages.CardMaker />} />
-        <Route path="/about" element={<Pages.About />} />
-        <Route path="*" element={<Pages.NotFound />} />
-      </Routes>
-    </div>
+    <NavBar />
+    <Routes>
+      <Route path="/" element={<Pages.Home />} />
+      <Route path="/cardmaker" element={<Pages.CardMaker />} />
+      <Route path="/about" element={<Pages.About />} />
+      <Route path="*" element={<Pages.NotFound />} />
+    </Routes>
   </Router>
 );
 
