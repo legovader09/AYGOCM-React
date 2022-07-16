@@ -19,16 +19,9 @@
   margin-top: -12px;
 }
 
-.btn {
+.btn-create {
   margin-top: 12px;
-  background-color: var(--btn-colour);
-  border-color: var(--btn-colour);
   padding: 12px 24px;
-}
-
-.btn:hover {
-  background-color: var(--btn-colour-hover);
-  border-color: var(--btn-colour-hover);
 }
 
 @media only screen and (max-width: 1200px) {

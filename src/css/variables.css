@@ -2,8 +2,19 @@
   --blue: #c6e7ff;
   --green: #c7ffb0;
   --grey: #808080;
+  --darkgrey: #333;
   --btn-colour: #0096e2;
   --btn-colour-hover: #00ade2;
+}
+
+.btn-primary {
+  background-color: var(--btn-colour);
+  border-color: var(--btn-colour);
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-colour-hover);
+  border-color: var(--btn-colour-hover);
 }
 
 html {
