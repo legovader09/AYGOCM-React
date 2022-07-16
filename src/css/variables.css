@@ -5,6 +5,7 @@
   --darkgrey: #333;
   --btn-colour: #0096e2;
   --btn-colour-hover: #00ade2;
+  --background: #f8f8f8;
 }
 
 .btn-primary {
@@ -19,6 +20,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+#root {
+  background-color: var(--background);
 }
 
 body {

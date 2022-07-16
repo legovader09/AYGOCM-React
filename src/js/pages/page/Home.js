@@ -2,9 +2,9 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import RoundedBox from '../../components/RoundedBox';
 import Text from '../../components/Text';
+import { ContentContext } from '../../utils/ContentContext';
 import Logo from '../../../assets/cover.png';
 import '../../../css/home.css';
-import { ContentContext } from '../../utils/ContentContext';
 
 const Home = () => {
   document.title = 'Home | Anime Yu-Gi-Oh! Card Maker';
@@ -17,7 +17,7 @@ const Home = () => {
               <img className="logo" src={Logo} alt="logo" />
             </div>
             <div className="banner child col-sm-6">
-              <h2 className="title">Anime Yu-Gi-Oh! Card Maker</h2>
+              <h1 className="title">Anime Yu-Gi-Oh! Card Maker</h1>
               <h3 className="subtitle">Web Edition</h3>
               <Button className="btn-create" href="/cardmaker">Start Creating</Button>
             </div>

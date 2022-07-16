@@ -29,6 +29,10 @@
   height: 260px;
 }
 
+.content {
+  background-color: white;
+}
+
 @media only screen and (max-width: 1200px) {
   .logo {
     width: 80%;
@@ -36,6 +40,9 @@
   }
   .iframe-yt {
     height: 160px;
+  }
+  .container {
+    max-width: 1024px;
   }
 }
 
