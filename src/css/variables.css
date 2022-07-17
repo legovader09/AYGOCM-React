@@ -47,6 +47,7 @@ code {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-duration: 0.5s;
+  animation-timing-function: ease-out;
 }
 
 @keyframes fadeIn {
