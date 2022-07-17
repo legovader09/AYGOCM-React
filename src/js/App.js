@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ContentContext } from './utils/ContentContext';
 import Consent from './utils/Consent';
 import Loader from './utils/Loader';
-import NavBar from './navigation/NavBar';
+import NavBar from './navigation';
+import Footer from './components/Footer';
 import * as Pages from './pages/index';
 import StaticContent from './StaticContent.json';
 
@@ -29,6 +30,7 @@ const App = () => {
               <Route key={route.key} path={route.path} element={route.element} />
             ))}
           </Routes>
+          <Footer />
         </Router>
       </ContentContext.Provider>
     )

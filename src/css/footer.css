@@ -1,0 +1,22 @@
+.footer {
+    padding: 50px 0;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    transition: 0.3s;
+}
+
+.footer-logo:hover {
+    width: 105px;
+    height: 105px;
+}
+
+.footer-text {
+    margin: 8px;
+}
