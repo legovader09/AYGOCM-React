@@ -1,3 +1,87 @@
-#Level {
-  margin-top: -250px;
+#card > img {
+  -webkit-user-drag: none;
+}
+
+@font-face {
+  font-family: ATKDEFFont;
+  src: url("../assets/Fonts/Souvenir/ITC\ Souvenir\ LT\ Light.ttf");
+}
+
+@font-face {
+  font-family: PendulumFont;
+  src: url("../assets/Fonts/Souvenir/Souvenir\ Black\ SSi\ Extra\ Bold.ttf");
+}
+
+@font-face {
+  font-family: LINKFont;
+  src: url("../assets/Fonts/EurostileExt-Bold\ Regular.ttf");
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.atkdeffield {
+  font-family: ATKDEFFont;
+  font-size: 48px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  width: 144px;
+  height: 54px;
+}
+
+#card {
+  width: 400px;
+  height: 583px;
+  position: relative;
+}
+
+#template {
+  z-index: 1;
+  width: inherit;
+  height: inherit;
+}
+
+#cardimage {
+  position: absolute;
+  z-index: 0;
+  top: 8px;
+  left: 20px;
+  width: 384px;
+  height: 420px;
+}
+
+#attribute {
+  position: absolute;
+  z-index: 2;
+  top: 452px;
+  left: 338px;
+  width: 42px;
+  height: 42px;
+}
+
+#ATKText {
+  position: absolute;
+  z-index: 2;
+  top: 504px;
+  left: 48px;
+}
+
+#DEFText {
+  position: absolute;
+  z-index: 2;
+  top: 504px;
+  left: 232px;
+}
+
+#lvlbar {
+  position: absolute;
+  z-index: 2;
+  top: 456px;
+  left: 11px;
+  width: 400px;
 }

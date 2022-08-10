@@ -10,11 +10,15 @@ const CardMaker = () => {
   return (
     <div className="container">
       <div className="content row">
-        <div className="child col-sm-4">
-          <img id="Template" src={images('./Templates/1-Normal.png')} alt="Card" width="400" height="583" />
-          <img id="Level" src={images('./Levels/LVL/Level1.png')} alt="Card" width="400" height="30" />
+        <div id="card">
+          <img id="template" src={images('./Templates/1-Normal.png')} alt="" />
+          <img id="cardimage" src={images('./blank.png')} style={{ objectFit: 'cover' }} alt="" />
+          <img id="lvlbar" src={images('./Levels/LVL/Level1.png')} alt="" />
+          <img id="attribute" src={images('./Attribute/JAP/Earth.png')} alt="" />
+          <input className="atkdeffield" id="ATKText" type="text" maxLength="5" placeholder="0" />
+          <input className="atkdeffield" id="DEFText" type="text" maxLength="5" placeholder="0" />
         </div>
-        <div className="child col-sm-8">
+        <div className="child col-md-8 col-sm-1">
           <h1 className="title">Anime Yu-Gi-Oh! Card Maker</h1>
           <h3 className="subtitle">Web Edition</h3>
         </div>
