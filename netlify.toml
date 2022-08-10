@@ -2,6 +2,3 @@
   from = "/*"
   to = "/"
   status = 200
-
-[lfs]
-	fetchinclude = *.jpg,*.png,*.svg,*.gif,*.pdf,*.mp4,*.ttf
