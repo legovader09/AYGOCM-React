@@ -4,17 +4,17 @@
 
 @font-face {
   font-family: ATKDEFFont;
-  src: url("../assets/Fonts/Souvenir/ITC\ Souvenir\ LT\ Light.ttf");
+  src: url("../assets/Fonts/Souvenir/ITC-Souvenir-LT-Light.ttf");
 }
 
 @font-face {
   font-family: PendulumFont;
-  src: url("../assets/Fonts/Souvenir/Souvenir\ Black\ SSi\ Extra\ Bold.ttf");
+  src: url("../assets/Fonts/Souvenir/Souvenir-Black-SSi-Extra-Bold.ttf");
 }
 
 @font-face {
   font-family: LINKFont;
-  src: url("../assets/Fonts/EurostileExt-Bold\ Regular.ttf");
+  src: url("../assets/Fonts/EurostileExt-Bold-Regular.ttf");
 }
 
 .custom-file-upload {
