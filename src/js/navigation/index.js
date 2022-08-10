@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../assets/logo.svg';
+import * as Pages from '../pages/index';
 import '../../css/navbar.css';
 
 const NavBar = () => {
@@ -18,9 +19,10 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="navbar-toggler" id="hamburger" />
         <Navbar.Collapse id="navbar-toggler">
           <Nav className="mx-auto">
-            <Nav.Link eventKey="1" as={Link} to="/" className="nav-item nav-link">Home</Nav.Link>
-            <Nav.Link eventKey="2" as={Link} to="/cardmaker" className="nav-item nav-link">Card Maker</Nav.Link>
-            <Nav.Link eventKey="3" as={Link} to="/about" className="nav-item nav-link">About</Nav.Link>
+            {Pages.allRoutes.map((route, index) => (
+              !route.hideFromNav
+              && <Nav.Link eventKey={index} as={Link} to={route.path} className="nav-item nav-link">{route.title}</Nav.Link>
+            ))}
           </Nav>
         </Navbar.Collapse>
       </Container>
