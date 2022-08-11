@@ -2,6 +2,7 @@ import React from 'react';
 import * as serviceWorkerRegistration from '../../../serviceWorkerRegistration';
 import '../../../css/cardmaker.css';
 
+require.context('../../../Fonts', true);
 const images = require.context('../../../assets', true);
 
 const CardMaker = () => {

@@ -21,7 +21,7 @@ const NavBar = () => {
           <Nav className="mx-auto">
             {Pages.allRoutes.map((route, index) => (
               !route.hideFromNav
-              && <Nav.Link eventKey={index} as={Link} to={route.path} className="nav-item nav-link">{route.title}</Nav.Link>
+              && <Nav.Link key={route.key} eventKey={index} as={Link} to={route.path} className="nav-item nav-link">{route.title}</Nav.Link>
             ))}
           </Nav>
         </Navbar.Collapse>

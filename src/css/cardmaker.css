@@ -30,7 +30,7 @@
   text-align: center;
   background-color: transparent;
   border: none;
-  width: 144px;
+  width: 146px;
   height: 54px;
 }
 
@@ -68,14 +68,14 @@
   position: absolute;
   z-index: 2;
   top: 504px;
-  left: 48px;
+  left: 46px;
 }
 
 #DEFText {
   position: absolute;
   z-index: 2;
   top: 504px;
-  left: 232px;
+  left: 230px;
 }
 
 #lvlbar {
@@ -83,5 +83,46 @@
   z-index: 2;
   top: 456px;
   left: 11px;
-  width: 400px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+  #card {
+    padding: 0;
+  }
+  #template {
+    width: 375px;
+    height: 547px
+  }
+  #lvlbar {
+    top: 430px;
+    left: 0;
+  }
+  #attribute {
+    top: 424px;
+    left: 306px;
+    width: 39px;
+    height: 39px;
+  }
+  #cardimage {
+    top: 8px;
+    left: 8px;
+    width: 360px;
+    height: 394px;
+  }
+  .atkdeffield {
+    font-size: 44px;
+    border: none;
+    width: 146px;
+    height: 54px;
+  }
+  #ATKText {
+    top: 471px;
+    left: 28px;
+  }
+  
+  #DEFText {
+    top: 471px;
+    left: 200px;
+  }
 }
