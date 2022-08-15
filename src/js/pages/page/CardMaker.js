@@ -19,7 +19,7 @@ const CardMaker = () => {
           <input className="atkdeffield" id="ATKText" type="text" maxLength="5" placeholder="0" />
           <input className="atkdeffield" id="DEFText" type="text" maxLength="5" placeholder="0" />
         </div>
-        <div className="child col-md-8 col-sm-1">
+        <div className="child col-md-6">
           <h1 className="title">Anime Yu-Gi-Oh! Card Maker</h1>
           <h3 className="subtitle">Web Edition</h3>
         </div>
