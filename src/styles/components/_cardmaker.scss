@@ -1,20 +1,7 @@
-#card > img {
-  -webkit-user-drag: none;
-}
-
-@font-face {
-  font-family: ATKDEFFont;
-  src: url("../Fonts/Souvenir/ITC-Souvenir-LT-Light.ttf");
-}
-
-@font-face {
-  font-family: PendulumFont;
-  src: url("../Fonts/Souvenir/Souvenir-Black-SSi-Extra-Bold.ttf");
-}
-
-@font-face {
-  font-family: LINKFont;
-  src: url("../Fonts/EurostileExt-Bold-Regular.ttf");
+#card {
+  img {
+    -webkit-user-drag: none;
+  }
 }
 
 .custom-file-upload {

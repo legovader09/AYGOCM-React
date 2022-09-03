@@ -1,0 +1,22 @@
+.footer {
+  padding: 50px 0;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+
+  &-logo {
+    width: 100px;
+    height: 100px;
+    transition: 0.3s;
+
+    &:hover {
+      width: 105px;
+      height: 105px;
+    }
+  }
+
+  &-text {
+    margin: 8px;
+  }
+}

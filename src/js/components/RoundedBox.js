@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../../css/rounded-box.css';
 
 const RoundedBox = ({ children, colour }) => (
-  <div className={`rounded-box rb-${colour}`}>
+  <div className={`rounded-box--${colour}`}>
     {children}
   </div>
 );

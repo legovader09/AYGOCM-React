@@ -3,7 +3,6 @@ import Button from 'react-bootstrap/Button';
 import RoundedBox from '../../components/RoundedBox';
 import Text from '../../components/Text';
 import Logo from '../../../assets/cover.png';
-import '../../../css/home.css';
 
 const Home = () => {
   const [isLogoReady, setLogoReady] = useState(false);

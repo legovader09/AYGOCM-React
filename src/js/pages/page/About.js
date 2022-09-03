@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import IframeResizer from 'iframe-resizer-react';
-import '../../../css/about.css';
 
 const About = () => {
   const [hasLoaded, setLoaded] = useState(false);

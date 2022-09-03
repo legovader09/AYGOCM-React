@@ -5,7 +5,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../assets/logo.svg';
 import * as Pages from '../pages/index';
-import '../../css/navbar.css';
 
 const NavBar = () => {
   const [navColour, setNavState] = useState('light');

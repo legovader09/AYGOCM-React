@@ -1,0 +1,16 @@
+.btn {
+  &-primary {
+    background-color: $btn-colour;
+    border-color: $btn-colour;
+
+    &:hover {
+      background-color: $btn-colour-hover;
+      border-color: $btn-colour-hover;
+    }
+  }
+  
+  &-create {
+    margin-top: 12px;
+    padding: 12px 24px;
+  }
+}
