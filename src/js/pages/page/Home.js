@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import RoundedBox from '../../components/RoundedBox';
 import Text from '../../components/Text';
@@ -6,6 +7,7 @@ import Logo from '../../../assets/cover.png';
 
 const Home = () => {
   const [isLogoReady, setLogoReady] = useState(false);
+  const navigate = useNavigate();
   document.title = 'Home | Anime Yu-Gi-Oh! Card Maker';
   return (
     <div id="preloader" className="container pre-loader" hidden={!isLogoReady}>
@@ -16,7 +18,7 @@ const Home = () => {
         <div className="banner child col-sm-6">
           <h1 className="title">Anime Yu-Gi-Oh! Card Maker</h1>
           <h3 className="subtitle">Web Edition</h3>
-          <Button className="btn-create" href="/cardmaker">Start Creating</Button>
+          <Button className="btn-create" onClick={() => navigate('cardmaker')}>Start Creating</Button>
         </div>
         <hr />
         <div className="child fadeIn col-md-8">

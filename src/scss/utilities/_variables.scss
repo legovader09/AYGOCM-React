@@ -1,0 +1,47 @@
+$blue: #c6e7ff;
+$green: #c7ffb0;
+$grey: #808080;
+$darkgrey: #333;
+$btn-colour: #0096e2;
+$btn-colour-hover: #00ade2;
+$background: #f8f8f8;
+
+$bp: (
+  sm: 400px,
+  md: 768px
+) !default;
+
+.fadeIn {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: .5s;
+  animation-timing-function: ease-out;
+}
+
+.slide-up {
+  opacity: 1;
+  bottom: 0;
+  animation-name: slideUp;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
+
+@keyframes slideUp {
+  0% {
+    bottom: -10%;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+
+  100% { opacity: 1; }
+}
