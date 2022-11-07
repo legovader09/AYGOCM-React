@@ -27,7 +27,7 @@ module.exports = {
   output: {
     filename: './js/bundle.js',
     path: path.join(__dirname, 'build'),
-    assetModuleFilename: 'assets/[name][ext][query]',
+    assetModuleFilename: 'assets/[hash][ext][query]',
     clean: true,
   },
   module: {

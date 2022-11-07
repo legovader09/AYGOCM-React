@@ -8,5 +8,6 @@ module.exports = merge(base, {
   devtool: 'eval',
   devServer: {
     contentBase: './build',
+    historyApiFallback: true,
   },
 });

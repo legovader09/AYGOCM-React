@@ -33,43 +33,23 @@
 }
 
 #cardimage {
-  position: absolute;
-  z-index: 0;
-  top: 8px;
-  left: 8px;
-  width: 384px;
-  height: 420px;
+  @include card-component(8px, 8px, 384px, 420px);
 }
 
 #attribute {
-  position: absolute;
-  z-index: 2;
-  top: 452px;
-  left: 325px;
-  width: 42px;
-  height: 42px;
+  @include card-component(452px, 325px, 42px, 42px, 2);
 }
 
 #ATKText {
-  position: absolute;
-  z-index: 2;
-  top: 504px;
-  left: 34px;
+  @include card-component(504px, 34px, 146px, 54px, 2);
 }
 
 #DEFText {
-  position: absolute;
-  z-index: 2;
-  top: 504px;
-  left: 218px;
+  @include card-component(504px, 218px, 146px, 54px, 2);
 }
 
 #lvlbar {
-  position: absolute;
-  z-index: 2;
-  top: 456px;
-  left: 0;
-  width: 100%;
+  @include card-component(456px, 0, 100%, auto, 2);
 }
 
 @media only screen and (max-width: 400px) {

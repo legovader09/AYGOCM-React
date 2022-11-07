@@ -1,28 +1,8 @@
-
-// Mobile first breakpoint mixin
-@mixin media-breakpoint-up($name, $breakpoints: $bp) {
-  $min: breakpoint-min($name, $breakpoints);
-
-  @if $min {
-    @media (min-width: $min) {
-      @content;
-    }
-  }
-  @else {
-    @content;
-  }
-}
-
-// Desktop first breakpoint mixin
-@mixin media-breakpoint-down($name, $breakpoints: $bp) {
-  $max: breakpoint-max($name, $breakpoints);
-
-  @if $max {
-    @media (max-width: $max) {
-      @content;
-    }
-  }
-  @else {
-    @content;
-  }
+@mixin card-component($top, $left, $width, $height, $z-index: 0, $position: absolute) {
+  position: $position;
+  z-index: $z-index;
+  top: $top;
+  left: $left;
+  width: $width;
+  height: $height;
 }
