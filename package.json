@@ -18,7 +18,8 @@
     "react-bootstrap": "^2.6.0",
     "react-cookie-consent": "^8.0.1",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "ttf-loader": "^1.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",
