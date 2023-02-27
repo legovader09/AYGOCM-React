@@ -1,3 +1,4 @@
+const path = require('path');
 const { merge } = require('webpack-merge');
 const base = require('./webpack.config.base');
 
@@ -7,7 +8,9 @@ module.exports = merge(base, {
   watch: true,
   devtool: 'eval',
   devServer: {
-    contentBase: './build',
+    static: path.join(__dirname, 'build'),
+    port: 3000,
+    https: true,
     historyApiFallback: true,
   },
 });

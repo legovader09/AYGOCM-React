@@ -15,8 +15,8 @@ const CardMaker = () => {
           <img id="cardimage" src={images('./blank.png')} style={{ objectFit: 'cover' }} alt="" />
           <img id="lvlbar" src={images('./Levels/LVL/Level1.png')} alt="" />
           <img id="attribute" src={images('./Attribute/JAP/Earth.png')} alt="" />
-          <input className="atkdeffield" id="ATKText" type="text" maxLength="5" placeholder="0" />
-          <input className="atkdeffield" id="DEFText" type="text" maxLength="5" placeholder="0" />
+          <input className="atkdeffield" id="ATKText" type="text" maxLength="5" placeholder="0" autoComplete="off" />
+          <input className="atkdeffield" id="DEFText" type="text" maxLength="5" placeholder="0" autoComplete="off" />
         </div>
         <div className="child col-md-6">
           <h1 className="title">Anime Yu-Gi-Oh! Card Maker</h1>

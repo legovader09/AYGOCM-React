@@ -5,7 +5,7 @@
   "main": "./src/js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "set NODE_ENV=development&& webpack --config webpack.config.dev.js",
+    "start": "set NODE_ENV=development&& webpack serve --config webpack.config.dev.js",
     "build": "set NODE_ENV=production&& webpack --config webpack.config.prod.js"
   },
   "author": "Dominik Hauerstein",
