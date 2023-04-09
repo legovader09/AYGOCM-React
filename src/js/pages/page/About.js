@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import IframeResizer from 'iframe-resizer-react';
 
-const About = () => {
+const About = ({ title }) => {
   const [hasLoaded, setLoaded] = useState(false);
-  document.title = 'About | Anime Yu-Gi-Oh! Card Maker';
+  document.title = `${title} | Anime Yu-Gi-Oh! Card Maker`;
   return (
     <div className="container">
       <div className="content iframe-host">
@@ -14,3 +15,7 @@ const About = () => {
 };
 
 export default About;
+
+About.propTypes = {
+  title: PropTypes.string.isRequired,
+};

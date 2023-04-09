@@ -27,7 +27,11 @@ const App = () => {
           <NavBar />
           <Routes>
             {Pages.allRoutes.map((route) => (
-              <Route key={route.key} path={route.path} element={route.element} />
+              <Route
+                key={route.key}
+                path={route.path}
+                element={<route.element title={route.title} />}
+              />
             ))}
           </Routes>
           <Footer />

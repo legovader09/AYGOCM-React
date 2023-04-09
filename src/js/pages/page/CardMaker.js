@@ -1,12 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import * as serviceWorkerRegistration from '../../../serviceWorkerRegistration';
 
 require.context('../../../Fonts', true);
 const images = require.context('../../../assets', true);
 
-const CardMaker = () => {
+const CardMaker = ({ title }) => {
   serviceWorkerRegistration.register();
-  document.title = 'Card Maker | Anime Yu-Gi-Oh! Card Maker';
+  document.title = `${title} | Anime Yu-Gi-Oh! Card Maker`;
   return (
     <div className="container">
       <div className="content row">
@@ -28,3 +29,7 @@ const CardMaker = () => {
 };
 
 export default CardMaker;
+
+CardMaker.propTypes = {
+  title: PropTypes.string.isRequired,
+};

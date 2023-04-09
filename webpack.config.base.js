@@ -22,7 +22,7 @@ module.exports = {
     new ESLintPlugin({ emitError: true, failOnError: true }),
     new FriendlyErrorsWebpackPlugin(),
     new MiniCssExtractPlugin({ filename: './css/bundle.css' }),
-    new CopyPlugin({ patterns: [{ from: "./public", to: path.resolve(__dirname, 'build') }] })
+    new CopyPlugin({ patterns: [{ from: './public', to: path.resolve(__dirname, 'build') }] }),
   ],
   output: {
     filename: './js/bundle.js',

@@ -1,7 +1,6 @@
 .rounded-box {
   border-radius: 8px;
-  font-weight: 600;
-  padding: 12px;
+  padding: 1rem;
 
   &--blue {
     @extend .rounded-box;

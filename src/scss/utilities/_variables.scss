@@ -6,10 +6,38 @@ $btn-colour: #0096e2;
 $btn-colour-hover: #00ade2;
 $background: #f8f8f8;
 
+$color-ui-red: #c23b3b;
+$color-ui-green: #6cb852;
+$color-ui-blue: #3387a2;
+
 $grid-breakpoints: (
   sm: 400px,
   md: 768px
 ) !default;
+
+.text-align {
+  &-center {
+    text-align: center;
+  }
+
+  &-left {
+    text-align: left;
+  }
+}
+
+.color {
+  &-warning {
+    color: $color-ui-red;
+  }
+  
+  &-success {
+    color: $color-ui-green;
+  }
+
+  &-info {
+    color: $color-ui-blue;
+  }
+}
 
 .fadeIn {
   opacity: 0;
