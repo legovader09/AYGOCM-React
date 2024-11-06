@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../assets/logo.svg';
-import '../../css/navbar.css';
+import * as Pages from '../pages/index';
 
 const NavBar = () => {
   const [navColour, setNavState] = useState('light');
@@ -12,15 +12,16 @@ const NavBar = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg={navColour} variant={navColour} fixed="top">
       <Container>
-        <Link to="/">
+        <NavLink to="/">
           <img className="navbar-logo" src={logo} alt="Logo" />
-        </Link>
+        </NavLink>
         <Navbar.Toggle aria-controls="navbar-toggler" id="hamburger" />
         <Navbar.Collapse id="navbar-toggler">
           <Nav className="mx-auto">
-            <Nav.Link eventKey="1" as={Link} to="/" className="nav-item nav-link">Home</Nav.Link>
-            <Nav.Link eventKey="2" as={Link} to="/cardmaker" className="nav-item nav-link">Card Maker</Nav.Link>
-            <Nav.Link eventKey="3" as={Link} to="/about" className="nav-item nav-link">About</Nav.Link>
+            {Pages.allRoutes.map((route, index) => (
+              !route.hideFromNav
+              && <Nav.Link key={route.key} eventKey={index} as={NavLink} to={route.path} className="nav-item nav-link">{route.title}</Nav.Link>
+            ))}
           </Nav>
         </Navbar.Collapse>
       </Container>

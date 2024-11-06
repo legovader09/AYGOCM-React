@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Text = ({ children, className }) => (
-  <span className={className} dangerouslySetInnerHTML={{ __html: children }} />
+  <div className={className}>
+    {children}
+  </div>
 );
 
 Text.defaultProps = { className: '' };

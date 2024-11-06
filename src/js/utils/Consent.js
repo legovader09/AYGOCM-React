@@ -1,7 +1,6 @@
 import React from 'react';
 import CookieConsent from 'react-cookie-consent';
 import { ContentContext } from './ContentContext';
-import '../../css/cookie.css';
 
 const Consent = () => (
   <ContentContext.Consumer>
@@ -14,7 +13,6 @@ const Consent = () => (
         sameSite="strict"
         location="bottom"
         cookieName="CONSENT"
-        style={{ background: 'var(--darkgrey)' }}
         buttonText={content.Strings.Consent.AcceptText}
         declineButtonText={content.Strings.Consent.DeclineText}
         expires={30}

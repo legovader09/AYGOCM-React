@@ -1,0 +1,8 @@
+@mixin card-component($top, $left, $width, $height, $z-index: 0, $position: absolute) {
+  position: $position;
+  z-index: $z-index;
+  top: $top;
+  left: $left;
+  width: $width;
+  height: $height;
+}

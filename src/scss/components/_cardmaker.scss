@@ -1,0 +1,101 @@
+#card {
+  width: 400px;
+  height: 583px;
+  position: relative;
+  padding: 0;
+
+  img {
+    -webkit-user-drag: none;
+  }
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.atkdeffield {
+  font-family: ATKDEFFont;
+  font-size: 48px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  width: 146px;
+  height: 54px;
+}
+
+#template {
+  z-index: 2;
+  width: inherit;
+  height: inherit;
+}
+
+#cardimage {
+  @include card-component(8px, 8px, 384px, 420px);
+}
+
+#attribute {
+  @include card-component(452px, 325px, 42px, 42px, 2);
+}
+
+#ATKText {
+  @include card-component(504px, 34px, 146px, 54px, 2);
+}
+
+#DEFText {
+  @include card-component(504px, 218px, 146px, 54px, 2);
+}
+
+#lvlbar {
+  @include card-component(456px, 0, 100%, auto, 2);
+}
+
+@media only screen and (max-width: 400px) {
+  #card {
+    padding: 0;
+  }
+
+  #template {
+    width: 375px;
+    height: 547px;
+  }
+
+  #lvlbar {
+    width: 375px;
+    top: 430px;
+    left: 0;
+  }
+
+  #attribute {
+    top: 424px;
+    left: 306px;
+    width: 39px;
+    height: 39px;
+  }
+
+  #cardimage {
+    top: 8px;
+    left: 8px;
+    width: 360px;
+    height: 394px;
+  }
+
+  .atkdeffield {
+    font-size: 44px;
+    border: none;
+    width: 146px;
+    height: 54px;
+  }
+
+  #ATKText {
+    top: 471px;
+    left: 28px;
+  }
+  
+  #DEFText {
+    top: 471px;
+    left: 200px;
+  }
+}
